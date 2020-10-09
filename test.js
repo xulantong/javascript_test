@@ -6,6 +6,7 @@ window.onload = function () {
     var lis = document.getElementById('control').getElementsByTagName('li');
     var arrows = document.getElementById('arrow');
     var arr = arrows.getElementsByClassName('arrow');
+    var timer = setInterval(move , 1500);
     var index = 0;
 
     // 箭头
@@ -27,6 +28,16 @@ window.onload = function () {
             index = this._index;
         }
     }
+
+    slide.onmouseover = function(){
+        clearInterval(timer);
+        arrows.style.display = 'inline-block';
+    }
+    slide.onmouseout = function(){
+        timer = setInterval(move , 1500);
+        arrows.style.display = 'none';
+    }
+
 
     function movePre() {
         pic[index].className = "";
