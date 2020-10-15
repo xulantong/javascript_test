@@ -1,16 +1,14 @@
 #outter{
-    width: 1024px;
-    height: 640px;
+    width: 800px;
+    height: 500px;
     margin: 30px auto;
     position: relative;
-    background-color: gray;
 
 }
 #inner div{
     width: 100%;
     height: 100%;
     display: none;
-    background-color: red;
 
 }
 #inner div.current{
@@ -18,8 +16,8 @@
 }
 
 #inner div img{
-    width: 1024px;
-    height: 640px;
+    width: 800px;
+    height: 500px;
 }
 
 
@@ -28,7 +26,7 @@
     position: absolute; 
     left: 50%; 
     margin-left: -50px; 
-    bottom: 15px;
+    bottom: 5px;
 }
 #control li{
     width: 12px; 
@@ -49,8 +47,14 @@
 #arrow{
     position: absolute;
     top: 50%;
-    width: 100%; 
+    transform: translateY(-25px);
+    width: 100%;
+}
 
+#arrow a img{
+    width: 50px;
+    height: 30px;
+    
 }
 #arrow .arrow{
     display: inline-block; 
